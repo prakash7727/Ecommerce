@@ -39,7 +39,7 @@ export default function AdminCategory() {
 
   const loadCategories = async () => {
     try {
-      const { data } = await axios.get("/categories");
+      const { data } = await axios.get("/api/categories");
       setCategories(data);
       console.log(data)
     } catch (err) {
