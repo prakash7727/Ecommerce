@@ -7,12 +7,12 @@ import Order from "../models/order.js";
 
 dotenv.config();
 
-const gateway = new braintree.BraintreeGateway({
-  environment: braintree.Environment.Sandbox,
-  merchantId: process.env.BRAINTREE_MERCHANT_ID,
-  publicKey: process.env.BRAINTREE_PUBLIC_KEY,
-  privateKey: process.env.BRAINTREE_PRIVATE_KEY
-})
+// const gateway = new braintree.BraintreeGateway({
+//   environment: braintree.Environment.Sandbox,
+//   merchantId: process.env.BRAINTREE_MERCHANT_ID,
+//   publicKey: process.env.BRAINTREE_PUBLIC_KEY,
+//   privateKey: process.env.BRAINTREE_PRIVATE_KEY
+// })
 export const create = async (req, res) => {
   try {
     // console.log(req.fields);

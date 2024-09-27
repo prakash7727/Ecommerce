@@ -93,7 +93,7 @@ app.get("/", (req, res) => {
 });
 
 // Define port
-const port = process.env.PORT || 8000;
+const port = process.env.PORT ;
 
 app.listen(port, () => {
   console.log(`Node server is running on port ${port}`);

@@ -12,6 +12,7 @@ const loadCategories = async() => {
       try{
       const { data} = await axios.get("/categories");
       setCategories(data);
+      console.log(data);
       } catch(err) {
             console.log(err)
       }

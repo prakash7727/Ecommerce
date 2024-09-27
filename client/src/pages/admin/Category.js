@@ -19,6 +19,7 @@ export default function AdminCategory() {
     e.preventDefault();
     try {
       const { data } = await axios.post("/category", { name });
+      console.log(data);
       if (data?.error) {
         toast.error(data.error);
       } else {
@@ -40,7 +41,7 @@ export default function AdminCategory() {
     try {
       const { data } = await axios.get("/categories");
       setCategories(data);
-      //console.log(data)
+      console.log(data)
     } catch (err) {
       console.log(err);
     }

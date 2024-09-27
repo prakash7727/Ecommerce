@@ -31,7 +31,7 @@ export default function AdminProduct() {
     try {
       const { data } = await axios.get("/categories");
       setCategories(data);
-      //console.log(data)
+      console.log(data)
     } catch (err) {
       console.log(err);
     }
